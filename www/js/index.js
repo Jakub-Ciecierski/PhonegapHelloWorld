@@ -43,7 +43,7 @@ var app = {
 			alert("Error calling Hello Plugin");
 		}
 
-		mileagetracker.greet("World", success, failure);
+		cordova.exec(success, failure, "MileageTracker", "greet", [name]);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
