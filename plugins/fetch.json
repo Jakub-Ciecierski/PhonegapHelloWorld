@@ -1,0 +1,10 @@
+{
+  "com.example.hello": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/don/cordova-plugin-hello.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

@@ -34,6 +34,16 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		
+		var success = function(message) {
+			alert(message);
+		}
+
+		var failure = function() {
+			alert("Error calling Hello Plugin");
+		}
+
+		hello.greet("World", success, failure);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
