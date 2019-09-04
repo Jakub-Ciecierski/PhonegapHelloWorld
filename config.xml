@@ -109,5 +109,5 @@
     <plugin name="cordova-sqlite-storage" spec="https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin" />
     <engine name="android" spec="~7.1.4" />
     <engine name="ios" spec="~4.5.5" />
-    <plugin name="com.engineroom.mileagetracker" spec="./local_plugins/MileageTrackerPlugin" />
+    <plugin name="com.engineroom.mileagetracker" spec="https://github.com/Jakub-Ciecierski/PhonegapPlugin.git" />
 </widget>

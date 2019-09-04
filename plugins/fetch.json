@@ -9,8 +9,8 @@
   },
   "com.engineroom.mileagetracker": {
     "source": {
-      "type": "local",
-      "path": "F:\\projects\\EngineRoom\\PwC\\HelloWorld\\node_modules\\cordova-engineroom-mileagetracker"
+      "type": "registry",
+      "id": "https://github.com/Jakub-Ciecierski/PhonegapPlugin.git"
     },
     "is_top_level": true,
     "variables": {}
