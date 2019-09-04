@@ -19,11 +19,12 @@
   },
   "homepage": "https://github.com/phonegap/phonegap-app-hello-world",
   "dependencies": {
-    "cordova-plugin-hello": "git+https://github.com/don/cordova-plugin-hello.git"
+    "cordova-engineroom-mileagetracker": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
+    "cordova-plugin-hello": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git"
   },
   "cordova": {
     "plugins": {
-      "com.example.hello": {}
+      "com.engineroom.mileagetracker": {}
     }
   }
 }

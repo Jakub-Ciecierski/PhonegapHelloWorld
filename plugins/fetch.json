@@ -1,8 +1,8 @@
 {
-  "com.example.hello": {
+  "com.engineroom.mileagetracker": {
     "source": {
       "type": "registry",
-      "id": "https://github.com/don/cordova-plugin-hello.git"
+      "id": "https://github.com/Jakub-Ciecierski/PhonegapPlugin"
     },
     "is_top_level": true,
     "variables": {}

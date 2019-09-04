@@ -1,14 +1,14 @@
 {
   "_from": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
-  "_id": "cordova-plugin-hello@0.1.0",
+  "_id": "cordova-engineroom-mileagetracker@0.1.0",
   "_inBundle": false,
   "_integrity": "",
-  "_location": "/cordova-plugin-hello",
+  "_location": "/cordova-engineroom-mileagetracker",
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
-    "rawSpec": "https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
+    "raw": "https://github.com/Jakub-Ciecierski/PhonegapPlugin",
+    "rawSpec": "https://github.com/Jakub-Ciecierski/PhonegapPlugin",
     "saveSpec": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
     "fetchSpec": "https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
     "gitCommittish": null
@@ -17,18 +17,18 @@
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git#7698ac87b1c42ce5e6918e874b513f0156042f75",
-  "_spec": "https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
+  "_resolved": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git#bf77d5161cb61fe9d36490dee89023d2ddb3589a",
+  "_spec": "https://github.com/Jakub-Ciecierski/PhonegapPlugin",
   "_where": "F:\\projects\\EngineRoom\\PwC\\HelloWorld",
   "author": {
-    "name": "Don Coleman"
+    "name": "EngineRoom"
   },
   "bugs": {
     "url": "https://github.com/don/cordova-plugin-hello/issues"
   },
   "bundleDependencies": false,
   "cordova": {
-    "id": "cordova-plugin-hello",
+    "id": "cordova-engineroom-mileagetracker",
     "platforms": [
       "android",
       "ios",
@@ -36,7 +36,7 @@
     ]
   },
   "deprecated": false,
-  "description": "A sample for a new cordova plugin",
+  "description": "MileageTracker",
   "homepage": "https://github.com/don/cordova-plugin-hello#readme",
   "keywords": [
     "cordova",
@@ -46,10 +46,10 @@
     "cordova-android"
   ],
   "license": "Apache-2",
-  "name": "cordova-plugin-hello",
+  "name": "cordova-engineroom-mileagetracker",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/don/cordova-plugin-hello.git"
+    "url": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git"
   },
   "version": "0.1.0"
 }

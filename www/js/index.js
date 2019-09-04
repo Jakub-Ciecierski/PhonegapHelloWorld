@@ -43,7 +43,7 @@ var app = {
 			alert("Error calling Hello Plugin");
 		}
 
-		hello.greet("World", success, failure);
+		mileagetracker.greet("World", success, failure);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
