@@ -1,0 +1,18 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.engineroom.mileagetracker": {
+      "PACKAGE_NAME": "com.engineroom.pwcmileage"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.engineroom.pwcmileage"
+    }
+  },
+  "dependent_plugins": {}
+}

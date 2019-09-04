@@ -36,6 +36,21 @@
         <param name="ios-package" value="MileageTracker" />
       </feature>
     </config-file>
+	
+	<config-file target="*-Info.plist" parent="UIBackgroundModes">
+    <array>
+            <string>fetch</string>
+			<string>location</string>
+			<string>remote-notification</string>
+    </array>
+	</config-file>
+	
+	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+      <string>need location access to pass tests</string>
+    </edit-config>
+	<edit-config target="NSLocationAlwaysandWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+      <string>need location access to pass tests</string>
+    </edit-config>
 
     <header-file src="src/ios/MileageTracker.h" target-dir="MileageTrackerPlugin"/>
     <source-file src="src/ios/MileageTracker.m" target-dir="MileageTrackerPlugin"/>
