@@ -97,4 +97,5 @@
     <engine name="android" spec="~7.1.4" />
     <plugin name="com.engineroom.mileagetracker" spec="https://github.com/Jakub-Ciecierski/PhonegapPlugin.git" />
     <engine name="ios" spec="~4.5.5" />
+    <plugin name="cordova-custom-config" spec="5.1.0" />
 </widget>

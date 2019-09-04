@@ -21,6 +21,7 @@
   "dependencies": {
     "com.engineroom.mileagetracker": "https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
     "cordova-android": "^7.1.4",
+    "cordova-custom-config": "5.1.0",
     "cordova-engineroom-mileagetracker": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
     "cordova-ios": "^4.5.5",
     "cordova-plugin-hello": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
@@ -29,7 +30,8 @@
   "cordova": {
     "plugins": {
       "cordova-sqlite-storage": {},
-      "com.engineroom.mileagetracker": {}
+      "com.engineroom.mileagetracker": {},
+      "cordova-custom-config": {}
     },
     "platforms": [
       "android",
