@@ -44,14 +44,14 @@ onDeviceReady: function() {
 	});
 	
     document.getElementById("startTripButton").onclick = function () {
-        cordova.exec(success, failure, "hello", "startTrip", ["10", "20"]);
+        cordova.exec(success, failure, "MileageTracker", "startTrip", ["10", "20"]);
         
     };
     document.getElementById("pauseTripButton").onclick = function () {
-        cordova.exec(success, failure, "hello", "pauseTrip");
+        cordova.exec(success, failure, "MileageTracker", "pauseTrip");
     };
     document.getElementById("stopTripButton").onclick = function () {
-        cordova.exec(success, failure, "hello", "stopTrip");
+        cordova.exec(success, failure, "MileageTracker", "stopTrip");
     };
     
     var myDB = window.sqlitePlugin.openDatabase({name: "TripDB.db", location: 'default'});
