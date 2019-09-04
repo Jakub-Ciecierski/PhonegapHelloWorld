@@ -46,10 +46,10 @@
 	</config-file>
 	
 	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-      <string>need location access to pass tests</string>
+      <string></string>
     </edit-config>
 	<edit-config target="NSLocationAlwaysandWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-      <string>need location access to pass tests</string>
+      <string></string>
     </edit-config>
 
     <header-file src="src/ios/MileageTracker.h" target-dir="MileageTrackerPlugin"/>
