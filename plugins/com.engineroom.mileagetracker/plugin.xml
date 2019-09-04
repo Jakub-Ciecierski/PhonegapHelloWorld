@@ -48,7 +48,7 @@
 	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
       <string></string>
     </edit-config>
-	<edit-config target="NSLocationAlwaysandWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+	<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
       <string></string>
     </edit-config>
 
