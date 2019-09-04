@@ -46,7 +46,7 @@ var app = {
 		cordova.exec(success, failure, "MileageTracker", "greet", [name]);
 		
 		window.sqlitePlugin.selfTest(function() {
-			console.log('Sqlite SELF test OK');
+			alert("Sqlite SELF test OK");
 		});
 		
     },
