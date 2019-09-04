@@ -18,47 +18,100 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
+initialize: function() {
+    document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+},
+    
     // deviceready Event Handler
     //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-		
-		var success = function(message) {
-			alert(message);
-		}
-
-		var failure = function() {
-			alert("Error calling Hello Plugin");
-		}
-
-		cordova.exec(success, failure, "MileageTracker", "greet", [name]);
-		
-		window.sqlitePlugin.selfTest(function() {
-			alert("Sqlite SELF test OK");
-		});
-		
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+    // Bind any cordova events here. Common events are:
+    // 'pause', 'resume', etc.
+onDeviceReady: function() {
+    this.receivedEvent('deviceready');
+    
+    var success = function(message) {
+        alert(message);
     }
+    
+    var failure = function() {
+        alert("Error calling MileageTracker Plugin");
+    }
+    
+	cordova.exec(success, failure, "MileageTracker", "greet", [name]);
+		
+	window.sqlitePlugin.selfTest(function() {
+		alert("Sqlite SELF test OK");
+	});
+	
+    document.getElementById("startTripButton").onclick = function () {
+        cordova.exec(success, failure, "hello", "startTrip", ["10", "20"]);
+        
+    };
+    document.getElementById("pauseTripButton").onclick = function () {
+        cordova.exec(success, failure, "hello", "pauseTrip");
+    };
+    document.getElementById("stopTripButton").onclick = function () {
+        cordova.exec(success, failure, "hello", "stopTrip");
+    };
+    
+    var myDB = window.sqlitePlugin.openDatabase({name: "TripDB.db", location: 'default'});
+
+    document.getElementById("viewTableDB").onclick = function () {
+        console.log('viewTableDB click')
+        myDB.transaction(function(transaction) {
+                         transaction.executeSql('SELECT * FROM gps_table', [],
+                                                function (tx, results) {
+                                                    console.log('viewTableDB success');
+                                                    var len = results.rows.length, i;
+                                                    console.log('viewTableDB success length = ' + len);
+                                                alert('viewTableDB success length = ' + len);
+                                                    for (i = 0; i < len; i++){
+                                                        console.log("[" + results.rows.item(i).id + ", " +
+                                                                    results.rows.item(i).distance + ", " +
+                                                                    results.rows.item(i).lat + ", " +
+                                                                    results.rows.item(i).long + ", " +
+                                                                    results.rows.item(i).timestamp + "]");
+                                                    }
+                                                },
+                                                function(error) {
+                                                    console.log('viewTableDB error');
+                                                }
+                                                );
+                         });
+    };
+    var intervalTimeSeconds = 2000;
+    setInterval(function() {
+                console.log('setInterval')
+                myDB.transaction(function(transaction) {
+                                 transaction.executeSql('SELECT * FROM gps_table WHERE id=(SELECT MAX(id) FROM gps_table)', [],
+                                                        function (tx, results) {
+                                                            console.log('viewTableDB success');
+                                                            var len = results.rows.length, i;
+                                                            if(len > 0) {
+                                                                document.getElementById('distanceTextArea').value = 'Distance = ' + results.rows.item(0).distance.toFixed(2) + ' meters';
+                                                            }
+                                                        },
+                                                        function(error) {
+                                                            console.log('viewTableDB error');
+                                                        }
+                                                        );
+                                 });
+                
+                }, intervalTimeSeconds);
+},
+    
+    // Update DOM on a Received Event
+receivedEvent: function(id) {
+    var parentElement = document.getElementById(id);
+    var listeningElement = parentElement.querySelector('.listening');
+    var receivedElement = parentElement.querySelector('.received');
+    
+    listeningElement.setAttribute('style', 'display:none;');
+    receivedElement.setAttribute('style', 'display:block;');
+    
+    console.log('Received Event: ' + id);
+}
 };
+
+app.initialize();
+
