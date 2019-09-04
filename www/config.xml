@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
+	<preference name="phonegap-version" value="3.7.0" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -93,7 +94,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <plugin name="com.engineroom.mileagetracker" spec="https://github.com/Jakub-Ciecierski/PhonegapPlugin" />
     <engine name="android" spec="~7.1.4" />
     <plugin name="cordova-sqlite-storage" spec="https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin" />
-    <plugin name="com.engineroom.mileagetracker" spec="https://github.com/Jakub-Ciecierski/PhonegapPlugin.git" />
 </widget>
