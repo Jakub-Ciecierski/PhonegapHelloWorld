@@ -8,13 +8,12 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-	
-	<config-file parent="UIBackgroundModes" platform="ios" target="*-Info.plist">
-	<array>
-		<string>fetch</string>
-		<string>location</string>
-		<string>remote-notification</string>
-	</array>
+    <config-file parent="UIBackgroundModes" platform="ios" target="*-Info.plist">
+        <array>
+            <string>fetch</string>
+            <string>location</string>
+            <string>remote-notification</string>
+        </array>
     </config-file>
     <config-file parent="NSLocationWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
         <string>Needed becouse TODO</string>
@@ -22,7 +21,6 @@
     <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
         <string>Needed becouse TODO 2</string>
     </config-file>
-	
     <preference name="DisallowOverscroll" value="true" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
@@ -110,6 +108,6 @@
     </platform>
     <plugin name="cordova-sqlite-storage" spec="https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin" />
     <engine name="android" spec="~7.1.4" />
-    <plugin name="com.engineroom.mileagetracker" spec="https://github.com/Jakub-Ciecierski/PhonegapPlugin.git" />
     <engine name="ios" spec="~4.5.5" />
+    <plugin name="com.engineroom.mileagetracker" spec="./local_plugins/MileageTrackerPlugin" />
 </widget>

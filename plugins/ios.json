@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-sqlite-storage": {
       "PACKAGE_NAME": "com.engineroom.pwcmileage"
+    },
+    "com.engineroom.mileagetracker": {
+      "PACKAGE_NAME": "com.engineroom.pwcmileage"
     }
   },
   "dependent_plugins": {}

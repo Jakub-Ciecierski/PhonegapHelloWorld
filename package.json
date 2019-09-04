@@ -20,16 +20,14 @@
   "homepage": "https://github.com/phonegap/phonegap-app-hello-world",
   "dependencies": {
     "cordova-android": "^7.1.4",
-    "cordova-custom-config": "5.1.0",
-    "cordova-engineroom-mileagetracker": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
+    "cordova-engineroom-mileagetracker": "file:local_plugins/MileageTrackerPlugin",
     "cordova-ios": "^4.5.5",
-    "cordova-plugin-hello": "git+https://github.com/Jakub-Ciecierski/PhonegapPlugin.git",
     "cordova-sqlite-storage": "git+https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin.git"
   },
   "cordova": {
     "plugins": {
       "cordova-sqlite-storage": {},
-      "cordova-custom-config": {}
+      "com.engineroom.mileagetracker": {}
     },
     "platforms": [
       "android",
