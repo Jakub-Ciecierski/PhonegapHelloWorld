@@ -1,4 +1,0 @@
-#Wed Sep 04 11:13:26 CEST 2019
-base.0=F\:\\projects\\EngineRoom\\PwC\\HelloWorld\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
-path.0=classes.dex
-renamed.0=classes.dex
