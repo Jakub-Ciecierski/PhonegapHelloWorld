@@ -1,0 +1,79 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/widget": [
+            {
+              "xml": "<feature name=\"MileageTracker\"><param name=\"ios-package\" value=\"MileageTracker\" /></feature>",
+              "count": 1
+            }
+          ],
+          "/*": [
+            {
+              "xml": "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "UIBackgroundModes": [
+            {
+              "xml": "<array><string>fetch</string><string>location</string><string>remote-notification</string></array>",
+              "count": 1
+            }
+          ],
+          "NSLocationWhenInUseUsageDescription": [
+            {
+              "xml": "<string>Needed becouse TODO</string>",
+              "count": 1
+            }
+          ],
+          "NSLocationAlwaysAndWhenInUseUsageDescription": [
+            {
+              "xml": "<string>Needed becouse TODO 2</string>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "com.engineroom.mileagetracker": {
+      "PACKAGE_NAME": "com.engineroom.pwcmileage"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.engineroom.pwcmileage"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "com.engineroom.mileagetracker.mileagetracker",
+      "file": "plugins/com.engineroom.mileagetracker/www/mileagetracker.js",
+      "pluginId": "com.engineroom.mileagetracker",
+      "clobbers": [
+        "mileagetracker"
+      ]
+    },
+    {
+      "id": "cordova-sqlite-storage.SQLitePlugin",
+      "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+      "pluginId": "cordova-sqlite-storage",
+      "clobbers": [
+        "SQLitePlugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "com.engineroom.mileagetracker": "0.7.0",
+    "cordova-sqlite-storage": "3.3.0"
+  }
+}
