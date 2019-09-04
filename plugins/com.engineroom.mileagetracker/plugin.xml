@@ -45,12 +45,13 @@
     </array>
 	</config-file>
 	
-	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-      <string>Needed becouse TODO</string>
-    </edit-config>
-	<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-      <string>Needed becouse TODO 2</string>
-    </edit-config>
+	<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+		<string>Needed becouse TODO</string>
+	</config-file>
+	
+	<config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+		<string>Needed becouse TODO 2</string>
+	</config-file>
 
     <header-file src="src/ios/MileageTracker.h" target-dir="MileageTrackerPlugin"/>
     <source-file src="src/ios/MileageTracker.m" target-dir="MileageTrackerPlugin"/>
