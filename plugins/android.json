@@ -7,11 +7,11 @@
     "files": {}
   },
   "installed_plugins": {
-    "com.engineroom.mileagetracker": {
-      "PACKAGE_NAME": "com.phonegap.helloworld"
-    },
     "cordova-sqlite-storage": {
       "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "com.engineroom.mileagetracker": {
+      "PACKAGE_NAME": "com.engineroom.pwcmileage"
     }
   },
   "dependent_plugins": {}
