@@ -36,20 +36,21 @@ onDeviceReady: function() {
     var failure = function() {
         alert("Error calling MileageTracker Plugin");
     }
-    
-	cordova.exec(success, failure, "MileageTracker", "greet", [name]);
 		
 	window.sqlitePlugin.selfTest(function() {
 		alert("Sqlite SELF test OK");
 	});
 	
     document.getElementById("startTripButton").onclick = function () {
+		alert("startTripButton");
         cordova.exec(success, failure, "MileageTracker", "startTrip", ["10", "20"]);
         
     };
+	/*
     document.getElementById("pauseTripButton").onclick = function () {
         cordova.exec(success, failure, "MileageTracker", "pauseTrip");
     };
+	*/
     document.getElementById("stopTripButton").onclick = function () {
         cordova.exec(success, failure, "MileageTracker", "stopTrip");
     };
