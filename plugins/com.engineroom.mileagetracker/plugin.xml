@@ -24,6 +24,9 @@
     </config-file>
 
     <source-file src="src/android/MileageTracker.java" target-dir="src/com/engineroom/mileagetracker/"/>
+	<source-file src="src/android/LocationManager.java" target-dir="src/com/engineroom/mileagetracker/"/>
+	<source-file src="src/android/TripDBManager.java" target-dir="src/com/engineroom/mileagetracker/"/>
+	<source-file src="src/android/TripManager.java" target-dir="src/com/engineroom/mileagetracker/"/>
   </platform>
 
   <platform name="ios">
@@ -36,6 +39,12 @@
 
     <header-file src="src/ios/MileageTracker.h" target-dir="MileageTrackerPlugin"/>
     <source-file src="src/ios/MileageTracker.m" target-dir="MileageTrackerPlugin"/>
+	<header-file src="src/ios/LocationManager.h" target-dir="MileageTrackerPlugin"/>
+    <source-file src="src/ios/LocationManager.m" target-dir="MileageTrackerPlugin"/>
+	<header-file src="src/ios/TripManager.h" target-dir="MileageTrackerPlugin"/>
+    <source-file src="src/ios/TripManager.m" target-dir="MileageTrackerPlugin"/>
+	<header-file src="src/ios/TripDBManager.h" target-dir="MileageTrackerPlugin"/>
+    <source-file src="src/ios/TripDBManager.m" target-dir="MileageTrackerPlugin"/>
   </platform>
 
   <platform name="wp7">
