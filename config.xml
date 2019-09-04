@@ -8,25 +8,13 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-    <custom-config-file parent="UIBackgroundModes" platform="ios" target="*-Info.plist">
-        <array>
-            <string>fetch</string>
-            <string>location</string>
-            <string>remote-notification</string>
-        </array>
-    </custom-config-file>
-    <custom-config-file parent="NSLocationWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
-        <string>Needed becouse TODO</string>
-    </custom-config-file>
-    <custom-config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
-        <string>Needed becouse TODO 2</string>
-    </custom-config-file>
-    <config-file parent="UIBackgroundModes" platform="ios" target="*-Info.plist">
-        <array>
-            <string>fetch</string>
-            <string>location</string>
-            <string>remote-notification</string>
-        </array>
+	
+	<config-file parent="UIBackgroundModes" platform="ios" target="*-Info.plist">
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
     </config-file>
     <config-file parent="NSLocationWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
         <string>Needed becouse TODO</string>
@@ -34,6 +22,7 @@
     <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
         <string>Needed becouse TODO 2</string>
     </config-file>
+	
     <preference name="DisallowOverscroll" value="true" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />

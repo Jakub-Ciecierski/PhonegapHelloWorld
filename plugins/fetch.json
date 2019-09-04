@@ -7,14 +7,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "com.engineroom.mileagetracker": {
-    "source": {
-      "type": "registry",
-      "id": "https://github.com/Jakub-Ciecierski/PhonegapPlugin.git"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-custom-config": {
     "source": {
       "type": "registry",
