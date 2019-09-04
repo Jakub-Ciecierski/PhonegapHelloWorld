@@ -1,0 +1,71 @@
+{
+  "_from": "git+https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin.git",
+  "_id": "cordova-sqlite-storage@3.3.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-sqlite-storage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin",
+    "rawSpec": "https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin",
+    "saveSpec": "git+https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin.git",
+    "fetchSpec": "https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin.git#eb71b220d65bae088ab160c2eb3d082be4b7f920",
+  "_shasum": "f52580102559e5d0b822ffa3170b5bcfdb326846",
+  "_spec": "https://github.com/Jakub-Ciecierski/PhonegapSQLitePlugin",
+  "_where": "F:\\projects\\EngineRoom\\PwC\\HelloWorld",
+  "author": {
+    "name": "various"
+  },
+  "bugs": {
+    "url": "https://github.com/xpbrew/cordova-sqlite-storage/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-sqlite-storage",
+    "platforms": [
+      "android",
+      "ios",
+      "osx",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "cordova-sqlite-storage-dependencies": "2.1.0"
+  },
+  "deprecated": false,
+  "description": "Native interface to SQLite for PhoneGap/Cordova - cordova-sqlite-storage plugin version",
+  "devDependencies": {
+    "coffeescript": "1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^8.1.0"
+  },
+  "homepage": "https://github.com/xpbrew/cordova-sqlite-storage",
+  "keywords": [
+    "sqlite",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-windows"
+  ],
+  "license": "MIT",
+  "name": "cordova-sqlite-storage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpbrew/cordova-sqlite-storage.git"
+  },
+  "scripts": {
+    "clean-spec": "rm -rf spec/[mnp]* && git cl spec/config.xml && git status --ignored",
+    "prepare-js": "coffee -p SQLitePlugin.coffee.md > www/SQLitePlugin.js",
+    "prepare-spec": "node scripts/prepareSpec.js"
+  },
+  "version": "3.3.0"
+}
