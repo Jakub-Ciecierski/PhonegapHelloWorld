@@ -10,6 +10,9 @@
     "com.engineroom.mileagetracker": {
       "PACKAGE_NAME": "com.engineroom.pwcmileage"
     },
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "com.engineroom.pwcmileage"
+    },
     "cordova-sqlite-storage": {
       "PACKAGE_NAME": "com.engineroom.pwcmileage"
     }
